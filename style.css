@@ -1,19 +1,34 @@
-* {
-	background-color: var(--secondary);
+.main *{
+	
 	font-family: Impact;
 	padding: 0;
 	margin: 0;
+    
+}
+.main{
+    background-color: var(--secondary);
 }
 :root {
 	--primary: rgba(255, 153, 255, 0.8);
 	--secondary: beige;
-	--tertiary: salmon;
+	--tertiary: rgba(250, 128, 114,0.9);
 }
 
-nav ul li {
+
+.main .cHeader{
+    padding: 50px;
+    margin: 20px auto;
+    width: 20%;
+    background: var(--tertiary);
+    opacity: 0.85;
+}
+
+
+
+.main nav ul li {
 	list-style: none;
 }
-nav ul li a {
+.main nav ul li a {
 	color: #222;
 	text-decoration: none;
 	padding: 10px;
@@ -22,7 +37,7 @@ nav ul li a {
 	float: left;
 	font-size: 50px;
 }
-nav {
+.main nav {
 	/* Let's make it sticky, why not? */
 	position: sticky;
 	top: -20px;
@@ -32,4 +47,20 @@ nav {
 	background-color: var(--tertiary);
 	/* above all else */
 	z-index: 999;
+}
+
+
+
+
+.lego{
+    background-image:url(https://i.ytimg.com/vi/MsE6PJF99Bc/maxresdefault.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.lego h1{
+    padding: 50px;
+    margin: auto;
+    width: 20%;
+    align-items: center;
+    background-color: blue;
 }
